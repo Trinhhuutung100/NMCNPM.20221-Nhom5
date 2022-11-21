@@ -53,7 +53,7 @@ public class LoginPanel extends javax.swing.JPanel {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/235-2350650_cg-user-login-user-login-icon-png-transparent.png"))); // NOI18N
 
-        jLabel2.setText("User");
+        jLabel2.setText("Username");
 
         jLabel3.setText("Password");
 
@@ -149,12 +149,12 @@ public class LoginPanel extends javax.swing.JPanel {
             ResultSet rs = ps.executeQuery();
             if(rs.next()){
                 b = true;
-                JOptionPane.showMessageDialog(null, "usernam and password matched");
+                JOptionPane.showMessageDialog(null, "username and password matched");
                 this.setVisible(false);
             }
             else {
                 b = false;
-                JOptionPane.showMessageDialog(null, "usernam and password unmatched");
+                JOptionPane.showMessageDialog(null, "username and password unmatched");
                 
             }
         } catch (Exception e){
