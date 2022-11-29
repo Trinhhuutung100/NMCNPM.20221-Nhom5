@@ -3,11 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/Study/NetBeans-15/Project/NMCNPM-Nhóm%205/src/controllers/MainController.java</file>
-            <file>file:/E:/Study/NetBeans-15/Project/NMCNPM-Nhóm%205/src/views/LoginPanel.java</file>
-            <file>file:/E:/Study/NetBeans-15/Project/NMCNPM-Nhóm%205/src/views/ThongKePanel.java</file>
-            <file>file:/E:/Study/NetBeans-15/Project/NMCNPM-Nhóm%205/src/views/MainFrame.java</file>
-            <file>file:/E:/Study/NetBeans-15/Project/NMCNPM-Nhóm%205/src/views/TrangChuPanel.java</file>
+            <file>file:/D:/code/gitHub/NMCNPM.20221-Nhom5/src/views/TamVangPanel.java</file>
+            <file>file:/D:/code/gitHub/NMCNPM.20221-Nhom5/src/Test/TestTamVangPannel.java</file>
+            <file>file:/D:/code/gitHub/NMCNPM.20221-Nhom5/src/controllers/TamVangPannelController.java</file>
         </group>
     </open-files>
 </project-private>
