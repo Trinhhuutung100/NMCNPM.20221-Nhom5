@@ -13,30 +13,30 @@ import java.sql.SQLException;
  */
 
 public class JDBCUtil {
-	public static Connection getConnection() {
-		Connection c = null;
-		try {
-			// dang ky mysql driver voi drivermanager
-			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+    public static Connection getConnection() {
+        Connection c = null;
+        try {
+            // dang ky mysql driver voi drivermanager
+            DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
 
-			// cac thong so
-			String DB_URL = "jdbc:mySQL://localhost:3306/nmcnpm";
-			String username = "root";
-			String password = "";
+            // cac thong so
+            String DB_URL = "jdbc:mySQL://localhost:3306/nmcnpm";
+            String username = "root";
+            String password = "";
 
-			// tao ket noi
-			c = DriverManager.getConnection(DB_URL, username, password);
-		} catch (SQLException e) {
-		}
-		return c;
-	}
+            // tao ket noi
+            c = DriverManager.getConnection(DB_URL, username, password);
+        } catch (SQLException e) {
+        }
+        return c;
+    }
 
-	public static void closeConnection(Connection c) {
-		try {
-			if (c != null) {
-				c.close();
-			}
-		} catch (SQLException e) {
-		}
-	}
+    public static void closeConnection(Connection c) {
+        try {
+            if (c != null) {
+                c.close();
+            }
+        } catch (SQLException e) {
+        }
+    }
 }

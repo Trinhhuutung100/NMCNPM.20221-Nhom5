@@ -22,6 +22,7 @@ public class TamVangPanel extends javax.swing.JPanel {
     private void setListenner(){
         TamVangPannelController tamVangPannelController = new TamVangPannelController(this);
         btnSearch.addActionListener(tamVangPannelController);
+        btnNew.addActionListener(tamVangPannelController);
         btnSave.addActionListener(tamVangPannelController);
         btnBack.addActionListener(tamVangPannelController);
     }
@@ -53,6 +54,7 @@ public class TamVangPanel extends javax.swing.JPanel {
         btnSave = new javax.swing.JButton();
         btnSearch = new javax.swing.JButton();
         txtSearch = new javax.swing.JTextField();
+        btnNew = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -76,6 +78,12 @@ public class TamVangPanel extends javax.swing.JPanel {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel7.setText("ID-NK");
 
+        txtMaGiayTamVang.setEnabled(false);
+
+        txtTuNgay.setToolTipText("dd/MM/yyyy");
+
+        txtDenNgay.setToolTipText("dd/MM/yyyy");
+
         atxtLyDo.setColumns(20);
         atxtLyDo.setRows(5);
         jScrollPane1.setViewportView(atxtLyDo);
@@ -89,6 +97,9 @@ public class TamVangPanel extends javax.swing.JPanel {
         btnSearch.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/search-icon16.png"))); // NOI18N
         btnSearch.setText("Search");
+
+        btnNew.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/New-icon16.png"))); // NOI18N
+        btnNew.setText("NEW");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -129,6 +140,8 @@ public class TamVangPanel extends javax.swing.JPanel {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnBack)
+                        .addGap(153, 153, 153)
+                        .addComponent(btnNew)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnSave))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -174,7 +187,8 @@ public class TamVangPanel extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBack)
-                    .addComponent(btnSave))
+                    .addComponent(btnSave)
+                    .addComponent(btnNew))
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -183,6 +197,7 @@ public class TamVangPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JTextArea atxtLyDo;
     public javax.swing.JButton btnBack;
+    public javax.swing.JButton btnNew;
     public javax.swing.JButton btnSave;
     public javax.swing.JButton btnSearch;
     private javax.swing.JLabel jLabel1;
